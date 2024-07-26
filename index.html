@@ -6,29 +6,46 @@
     <title>Unity WebGL Player | Ahmed Malik</title>
     <link rel="stylesheet" href="TemplateData/style.css">
     <style>
-        html{
+        html {
             height: -webkit-fill-available;
         }
+
         body {
             margin: 0;
             padding: 0;
             min-height: 100vh;
-            min-height: -webkit-fill-available;
             width: 100vw;
             overflow: hidden;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: top;
+            font-family: "Noto Sans", sans-serif;
+            color: white;
         }
+
         .ctaDiv {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: end;
             position: absolute;
             left: 0;
             right: 0;
             top: 0;
-            bottom: 0;
-            background: #fffa;
+            bottom: 50px;
             z-index: 99;
+        }
+
+        #startARButton {
+            padding: 15px 30px;
+            background-color: #c11f25;
+            color: white;
+            border-radius: 40px;
+            outline: none;
+            border: none;
+            font-weight: bolder;
+            cursor: pointer;
+            margin: 0 0 20px 0;
         }
     </style>
 </head>
